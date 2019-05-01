@@ -1,1 +1,237 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.box {
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+.font-stack {
+  font-family: 'SF UI Text', '-apple-system', 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+.font-heavy {
+  font-family: 'SF UI Text', '-apple-system', 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #4d4d4d;
+  font-weight: 800;
+}
+.font-large {
+  font-size: 1.4em;
+}
+body {
+  max-width: 100%;
+  margin: 10%;
+  margin-top: 5%;
+  font-family: 'SF UI Text', '-apple-system', 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+body nav {
+  display: flex;
+  justify-content: space-around;
+}
+body a {
+  text-decoration: none;
+  color: #909F8F;
+}
+body hr {
+  margin-top: 3%;
+}
+body .me {
+  width: 25%;
+  margin-top: 80px;
+}
+body .jumbo {
+  text-align: center;
+}
+body button {
+  margin-top: 3%;
+  border: 3px solid pink;
+  padding: 10px 20px;
+}
+body .bottomline {
+  margin-bottom: 5%;
+}
+body .main-content {
+  display: flex;
+}
+body .history {
+  width: 80%;
+  margin-right: 7%;
+}
+body article {
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+body .title {
+  font-family: 'SF UI Text', '-apple-system', 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #4d4d4d;
+  font-weight: 800;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+body .contact {
+  margin-top: 30px;
+}
+body .copyright {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  body p {
+    font-size: 1em !important;
+  }
+  body .copyright {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}

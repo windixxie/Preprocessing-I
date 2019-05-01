@@ -53,7 +53,119 @@ table {
     box-sizing: border-box;
 }
 
+@main-color: #909F8F;
+@site-margin: 10%;
+@main-font: 'SF UI Text', '-apple-system', 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+@border-style: 1px solid darken(white, 20%);
+@content-color: lighten(black, 30%);
+
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+.box {
+	border: @border-style;
+	padding: 15px;
+	border-radius: 10px;
+	background: darken(white, 5%);
+}
+
+.font-stack {
+	font-family: @main-font;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	font-weight: 100;
+	color: @content-color;
+}
+
+.font-heavy {
+	.font-stack;
+	font-weight: 800;
+}
+
+.font-large {
+	font-size: 1.4em;
+}
+
+body {
+	max-width: 100%;
+	margin: @site-margin;
+	margin-top: @site-margin/2;
+	.font-stack;
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	a {
+		text-decoration: none;
+		color: @main-color;
+	}
+
+	hr {
+		margin-top: 3%;
+	}
+
+	.me {
+		width: 25%;
+		margin-top: 80px;
+	}
+
+	.jumbo {
+		text-align: center;
+	}
+
+	button {
+		margin-top: 3%;
+		border: 3px solid pink;
+		padding: 10px 20px;
+	}
+
+	.bottomline {
+		margin-bottom: 5%;
+	}
+
+	.main-content {
+		display: flex;
+	}
+
+	.history{
+		width: 80%;
+		margin-right: 7%;
+	}
+
+	article {
+		.box;
+	}
+
+	.title {
+		.font-heavy;
+		.font-large;
+		margin-bottom: 8px;
+	}
+
+	.contact {
+		margin-top: 30px;
+	}
+
+	.copyright {
+		margin-top: 10%;
+		display: flex;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 500px){
+		p {
+			font-size: 1.0em !important;
+		}
+
+		.copyright {
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 }
 
